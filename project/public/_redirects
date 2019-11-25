@@ -1,5 +1,3 @@
 /home            /
-/test            /
-/test1           https://www.google.ca
-/test2           /redirect.html
-/test3/example/  /redirect1.html
+/api              /api.html
+/api/logi_circle  /logi_circle.html
