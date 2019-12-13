@@ -5,6 +5,11 @@
 <h1>Logitech Circle2 redirected URL temp location</h1>
 <p>Under construction waiting for API access -DL</p>
 <script>
+        var myHeader = XMLHttpRequest.getResponseHeader("Location");
+        console.log(myHeader)
+
+
+
         const urlParams = new URLSearchParams(window.location);
         const myParam = urlParams.get('code');
         console.log(myParam);
