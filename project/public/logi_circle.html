@@ -5,10 +5,14 @@
 <h1>Logitech Circle2 redirected URL temp location</h1>
 <p>Under construction waiting for API access -DL</p>
 <script>
-    console.log("script...")
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('code');
+        console.log(myParam);
 window.onload = function() {
-    console.log("Site loaded");
-    console.log(window.location)
+    const urlParams = new URLSearchParams(window.location.search);
+    const myParam = urlParams.get('code');
+    console.log(myParam);
+
 }
 
 </script>
