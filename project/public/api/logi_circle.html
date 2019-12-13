@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Logitech Circle2 redirected URL temp location</h1>
+<p>Under construction waiting for API access -DL</p>
+<script>
+        var req = new XMLHttpRequest();
+req.open('GET', document.location, false);
+req.send(null);
+headers = req.getAllResponseHeaders().split("\n")
+     .map(x=>x.split(/: */,2))
+     .filter(x=>x[0])
+     .reduce((ac, x)=>{ac[x[0]] = x[1];return ac;}, {});
+
+console.log(headers.userId);
+
+
+
+        const urlParams = new URLSearchParams(window.location);
+        const myParam = urlParams.get('code');
+        console.log(myParam);
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location);
+    const myParam = urlParams.get('code');
+    console.log(myParam);
+
+}
+
+</script>
+
+</body>
+</html>
