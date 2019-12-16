@@ -13,7 +13,7 @@
         var payload = "grant_type=authorization_code&"+
                       "client_id=cd3b9c9d-6350-4747-9eb8-2596621d0333&"+
                       "client_secret=owvAhkGX0x8Og45F&"+
-                      "redirect_uri=https://leacock.netlify.com/api/logi_circle&"
+                      "redirect_uri=https://leacock.netlify.com/api/logi_circle&"+
                       "code="+code;
 
         console.log("Sending POST to grab access token with payload: " + payload);
@@ -21,7 +21,6 @@
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://accounts.logi.com/identity/oauth2/token", true);
-        xhr.withCredentials = true;
         xhr.setRequestHeader('X-API-Key', 'DoUTyeLcWmz4gEwYlZ7D0rsDWW8');
         xhr.send(payload);
 
