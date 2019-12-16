@@ -21,6 +21,7 @@
 
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "https://accounts.logi.com/identity/oauth2/token", true);
+        xhr.withCredentials = true;
         xhr.setRequestHeader('X-API-Key', 'DoUTyeLcWmz4gEwYlZ7D0rsDWW8');
         xhr.send(payload);
 
