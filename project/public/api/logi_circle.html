@@ -7,7 +7,7 @@
 <script>
         var url = window.location.href;
         var code = url.match(new RegExp("code=" + "(.*)" + "&lang=en"))[1]
-        console.log("Code is" + code)
+        console.log("Code is: " + code)
        
 
         var payload = "grant_type=authorization_code&"+
